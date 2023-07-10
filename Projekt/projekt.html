@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Projekt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+
+* {
+    box-sizing: border-box; 
+}
+  body {
+    background: #ec8889;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-width: 100vh;
+    min-height: 100vh;
+    border: #ec8889 solid 3vh;
+   margin:0
+  }
+  .container {
+    min-height: 98vh;
+    min-width: 98vh;
+    background-color: rgb(255, 255, 255);
+}
+ 
+main {
+    display:flex;
+    flex-direction: row;
+}
+
+#gl {flex-direction: column;
+    flex:1;
+    display: flex;
+    padding-top: 4vh;
+    padding-left: 45vh;
+    height: auto;
+    width: auto;
+  
+}
+
+#side {
+  display: flex;
+  flex-direction: column;
+  background: white;
+    flex:1.5;
+    padding-top: 15vh;
+    order: 1;
+    padding-right: 30vh;
+    align-items:center;
+justify-content: center;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 2.8em;
+    text-transform:none;
+}
+p {display: inline-block;
+  font-size: 0.95em;}
+a {color: #ec8889}
+
+button {
+  width: 50vh;
+  height: 7vh;
+margin: auto;
+  background-color: #ec8889;
+  border-radius: 30px;
+  color: white;
+align-items: center;
+ border: none;
+ font-size: larger;
+}
+
+
+#pic{    width: 50vh;
+    height: 50vh;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#socials {
+flex-direction: row;
+margin: auto;
+justify-items: center;
+background: white;
+justify-content:space-evenly;
+gap: 20px;
+display: flex;
+}
+
+
+@media screen and (max-width: 700px)
+{
+  .container 
+  {flex-direction:column-reverse;
+    display:flex;
+  }}
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <main>
+    <section id="gl"> 
+           <h1 id="part1">  Hello, <br>
+            I'm <span style="color:#ec8889">Julia Goerges </span><br>
+            <strong>PROJECT MANAGER</strong></h1>
+          <p>  Working with people is my passion.<br>
+I coordinated projects in tech companies, both big enterprise and small start-ups. I know how to deliver products for every needs. <br><br>
+Take a look at my <a href="" target="_blank">recent projects</a><br><br>
+You can contact me via <a href="" target="_blank">LinkedIn</a><br><br>
+Email me: <a href="mailto:xyz@gmail.com" target="_blank">project@manager.com</a><br><br><br>
+<div id="download">
+  <a href="photo.jpg" download="CV">
+    <button>DOWNLOAD CV</button>
+  </a>
+</div>
+</section>
+        <aside id="side">
+          
+            <img id="pic" src="./photo.jpg" alt="zdjęcie">
+            <div id="socials">
+              <a href="" target="_blank"> <img src="fb.png" alt="Facebook" width="40px" height="40px"></a>
+              <a href="" target="_blank"> <img src="gh.png" alt="Facebook" width="40px" height="40px"></a>
+              <a href="" target="_blank"> <img src="ig.png" alt="Facebook" width="40px" height="40px"></a>
+          </div>
+        </aside>
+  </main>
+  </div>
+</body>
+</html>
+<!--pytanie: niby wiem, że można uppercase zmienić literki, ale jednak nie wiem jak to zrobić, żeby nie było przerwy między częścią z normalnymi literkami a z dużymi
+jak robie sobie dwa h1 to robi mi sie przerwa
